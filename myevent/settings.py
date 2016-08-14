@@ -57,7 +57,7 @@ ROOT_URLCONF = 'myevent.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'template', 'html')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -109,8 +109,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_URL = "/login"
-<<<<<<< HEAD
+
 LOGIN_REDIRECT_URL = "/"
-=======
+
 LOGIN_REDIRECT_URL = "/"
->>>>>>> day-4-step-3
+
