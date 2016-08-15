@@ -23,7 +23,7 @@
 
 								<!--== Logo ==-->
 								<span class="navbar-brand logo">
-									Event Site
+									MyEvent
 								</span>
 								<span class="style">
 									<a class="lstye home" href="/events">Browse</a>
@@ -51,10 +51,11 @@
 			<div class="myt">
 				<div class="container">
 					<div class="timeline-panel">
+                    <h3>Upcoming Event</h3>
 			            <div class="timeline-heading">
-			                {%if event%}
+			                {% if event %}
 			                <h4><a href="{% url 'event_detail' event.id %}">{{ event.title }}</a></h4>
-			                {%endif%}
+			                {% endif %}
 			            </div>
 			            <div class="timeline-body">
 			                <p class="timeline-desc col-md-6">{{event.description | truncatewords:20}}</p>
