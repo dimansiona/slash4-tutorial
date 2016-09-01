@@ -74,6 +74,7 @@ Reset ==============*/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,hr,th,td {
   margin:0; 
   padding:0;
+
 }
 
 
@@ -89,6 +90,9 @@ color: rgba(166, 53, 53, 0.42);
 }
 
 body {
+  background: url(../images/demo/bg-slide-01.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -268,7 +272,7 @@ input[type='submit']:active {
 }
 
 header{
-  background: url(../images/demo/bg-slide-02.jpg);
+  background: #FFF;
   background-size: cover;
 }
 .header-bg {
@@ -575,7 +579,6 @@ background: none;
   color: black;
   overflow: hidden;
   text-transform: uppercase;
-  color: #37788a;
 }
 
 .navbar-nav > li.current > a {
@@ -592,7 +595,7 @@ background: none;
     font-weight: 700;
     padding: 1rem 0;
     color: #37788a;
-    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .navbar-brand span {
@@ -1576,7 +1579,6 @@ font-weight: bold;
 
 .browser{
   position: fixed;
-  background: #c5eff7;
 }
 
 
